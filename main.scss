@@ -1,0 +1,148 @@
+$first-color: #e9d5ca;
+$second-color: #827397;
+$third-color: #4d4c7d;
+$fourth-color: #363062;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #f1f1f1;
+  header {
+    background-color: $first-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 72px;
+
+    .header-rightside {
+      display: flex;
+      align-items: center;
+
+      .cart {
+        margin: 0 25px;
+        i {
+          font-size: 32px;
+        }
+
+        & button {
+          background: none;
+          border: none;
+          &:hover {
+            color: $fourth-color;
+            cursor: pointer;
+          }
+        }
+      }
+      .language {
+        & button {
+          background: none;
+          border: none;
+          &:hover {
+            color: $fourth-color;
+            cursor: pointer;
+          }
+        }
+        i {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .search {
+      float: right;
+      margin: 7px;
+      position: relative;
+
+      & input[type="text"] {
+        width: 400px;
+        height: 35px;
+        border-radius: 25px;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        cursor: crosshair;
+        &:focus {
+          color: $first-color;
+          padding-left: 50px;
+
+          &::placeholder {
+            color: rgb(255, 255, 255);
+            padding: 20px;
+          }
+        }
+        &:focus {
+          background: $fourth-color;
+        }
+      }
+      & button {
+        background-color: $second-color;
+        top: 0;
+        right: 0;
+        position: absolute;
+        color: #f2f2f2;
+        float: right;
+        padding: 5px 10px;
+        margin-right: 16px;
+        font-size: 12px;
+        border: none;
+        cursor: pointer;
+        height: 100%;
+      }
+    }
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: $second-color;
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+
+      .dropbtn {
+        background-color: inherit;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        transition: color 0.5 ease-in-out;
+        cursor: pointer;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        & a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          &:hover {
+            background-color: $second-color;
+            color: white;
+          }
+        }
+      }
+      &:hover .dropdown-content {
+        display: block;
+      }
+      &:hover .dropbtn {
+        background-color: $fourth-color;
+      }
+      .hide {
+        display: none;
+      }
+
+      .myDIV:hover + .hide {
+        display: block;
+        color: red;
+      }
+    }
+  }
+}
