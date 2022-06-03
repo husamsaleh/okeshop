@@ -98,7 +98,6 @@ body {
     background-color: $second-color;
 
     .dropdown {
-      position: relative;
       display: inline-block;
 
       .dropbtn {
@@ -112,36 +111,31 @@ body {
       }
       .dropdown-content {
         display: none;
+        left: 0;
         position: absolute;
         background-color: #f1f1f1;
-
+        height: 400px;
         width: 100%;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        padding: 50px;
+
         & a {
           color: black;
-          padding: 12px 16px;
+          padding: 20px 16px;
           text-decoration: none;
-          display: block;
           &:hover {
             background-color: $second-color;
             color: white;
+            z-index: 22;
           }
         }
       }
-      &:hover .dropdown-content {
+      &:focus-within .dropdown-content {
         display: block;
       }
       &:hover .dropbtn {
         background-color: $fourth-color;
-      }
-      .hide {
-        display: none;
-      }
-
-      .myDIV:hover + .hide {
-        display: block;
-        color: red;
       }
     }
   }

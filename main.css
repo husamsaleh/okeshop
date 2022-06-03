@@ -118,7 +118,6 @@ body .navbar {
   background-color: #827397;
 }
 body .navbar .dropdown {
-  position: relative;
   display: inline-block;
 }
 body .navbar .dropdown .dropbtn {
@@ -133,34 +132,30 @@ body .navbar .dropdown .dropbtn {
 }
 body .navbar .dropdown .dropdown-content {
   display: none;
+  left: 0;
   position: absolute;
   background-color: #f1f1f1;
+  height: 400px;
   width: 100%;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  padding: 50px;
 }
 body .navbar .dropdown .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 20px 16px;
   text-decoration: none;
-  display: block;
 }
 body .navbar .dropdown .dropdown-content a:hover {
   background-color: #827397;
   color: white;
+  z-index: 22;
 }
-body .navbar .dropdown:hover .dropdown-content {
+body .navbar .dropdown:focus-within .dropdown-content {
   display: block;
 }
 body .navbar .dropdown:hover .dropbtn {
   background-color: #363062;
-}
-body .navbar .dropdown .hide {
-  display: none;
-}
-body .navbar .dropdown .myDIV:hover + .hide {
-  display: block;
-  color: red;
 }
 /*# sourceMappingURL=main.css.map */
