@@ -181,4 +181,10 @@ body .active-btn {
 body .active-btn:hover {
   background-color: #222831 !important;
 }
+@media (max-width: 700px) {
+  body .dropdown-content {
+    height: 100vh !important;
+    background: #00adb5 !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */

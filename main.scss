@@ -154,4 +154,10 @@ body {
       background-color: $fourth-color !important;
     }
   }
+  @media (max-width: 700px) {
+    .dropdown-content {
+      height: 100vh !important;
+      background: #00adb5 !important;
+    }
+  }
 }
