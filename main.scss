@@ -24,6 +24,7 @@ body {
 
       .cart {
         margin: 0 25px;
+
         i {
           font-size: 32px;
         }
@@ -49,6 +50,9 @@ body {
         i {
           font-size: 32px;
         }
+      }
+      .more {
+        display: none;
       }
     }
 
@@ -96,6 +100,7 @@ body {
   .navbar {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: $second-color;
 
     .dropdown {
@@ -147,17 +152,32 @@ body {
       }
     }
   }
-  .active-btn {
+
+  button.active-btn {
     background-color: $fifth-color !important;
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
     &:hover {
       background-color: $fourth-color !important;
     }
   }
   @media (max-width: 700px) {
-    .dropdown-content {
-      height: 100vh !important;
-      background: #00adb5 !important;
+    .cart,
+    .language {
+      display: none;
+    }
+    header .header-rightside .more {
+      display: block;
+    }
+
+    .search form {
+      width: 200px;
+    }
+    .search input {
+      width: 200px !important;
+    }
+    .navbar .dropdown .dropdown-content {
+      height: 100vh;
+      background: #00adb5;
     }
   }
 }
