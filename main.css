@@ -10,7 +10,7 @@ body {
   background: #f1f1f1;
 }
 body header {
-  background-color: #e9d5ca;
+  background-color: #eeeeee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +40,7 @@ body header .header-rightside .cart button {
   border: none;
 }
 body header .header-rightside .cart button:hover {
-  color: #363062;
+  color: #222831;
   cursor: pointer;
 }
 body header .header-rightside .language button {
@@ -48,7 +48,7 @@ body header .header-rightside .language button {
   border: none;
 }
 body header .header-rightside .language button:hover {
-  color: #363062;
+  color: #222831;
   cursor: pointer;
 }
 body header .header-rightside .language i {
@@ -68,7 +68,7 @@ body header .search input[type=text] {
   cursor: crosshair;
 }
 body header .search input[type=text]:focus {
-  color: #e9d5ca;
+  color: #eeeeee;
   padding-left: 50px;
 }
 body header .search input[type=text]:focus::-webkit-input-placeholder {
@@ -92,10 +92,10 @@ body header .search input[type=text]:focus::placeholder {
   padding: 20px;
 }
 body header .search input[type=text]:focus {
-  background: #363062;
+  background: #222831;
 }
 body header .search button {
-  background-color: #827397;
+  background-color: #00adb5;
   top: 0;
   right: 0;
   position: absolute;
@@ -115,7 +115,7 @@ body .navbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #827397;
+  background-color: #00adb5;
 }
 body .navbar .dropdown {
   display: inline-block;
@@ -142,20 +142,43 @@ body .navbar .dropdown .dropdown-content {
   z-index: 1;
   padding: 50px;
 }
-body .navbar .dropdown .dropdown-content a {
-  color: black;
-  padding: 20px 16px;
-  text-decoration: none;
+body .navbar .dropdown .dropdown-content .mid-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
 }
-body .navbar .dropdown .dropdown-content a:hover {
-  background-color: #827397;
-  color: white;
-  z-index: 22;
+body .navbar .dropdown .dropdown-content .mid-text h5 {
+  color: #00adb5;
+  text-decoration: underline;
+}
+body .navbar .dropdown .dropdown-content .mid-text a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 body .navbar .dropdown:focus-within .dropdown-content {
   display: block;
 }
 body .navbar .dropdown:hover .dropbtn {
-  background-color: #363062;
+  background-color: #222831;
+}
+body .active-btn {
+  background-color: #6a2c70 !important;
+  color: rgb(255, 255, 255) !important;
+}
+body .active-btn:hover {
+  background-color: #222831 !important;
 }
 /*# sourceMappingURL=main.css.map */
