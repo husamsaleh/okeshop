@@ -6,9 +6,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.divider {
+  width: 100%;
+  height: 122px;
+}
+
 body {
   background: #f1f1f1;
-  padding-top: 120px;
 }
 body .hn_holders {
   position: fixed;
@@ -127,6 +131,10 @@ body .navbar {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #00adb5;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 50px;
 }
 body .navbar .dropdown {
   display: inline-block;
@@ -146,12 +154,15 @@ body .navbar .dropdown .dropdown-content {
   display: none;
   left: 0;
   position: fixed;
+  text-align: start;
   background-color: #f1f1f1;
-  height: 400px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100vw;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 2222;
   padding: 50px;
 }
 body .navbar .dropdown .dropdown-content .mid-text {
@@ -214,5 +225,8 @@ body .language {
 }
 body .intro {
   position: relative;
+  margin-left: 200px;
+  z-index: -1;
+  margin-bottom: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
