@@ -136,6 +136,7 @@ body {
         text-align: start;
         background-color: #f1f1f1;
         height: fit-content;
+        min-height: 500px;
         width: 100vw;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 2222;
@@ -157,6 +158,11 @@ body {
           & a {
             color: rgb(0, 0, 0);
             text-decoration: none;
+          }
+          h5,a:hover{
+           
+            color: $second-color;
+            cursor: pointer;
           }
         }
       }

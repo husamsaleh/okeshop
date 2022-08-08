@@ -159,6 +159,7 @@ body .navbar .dropdown .dropdown-content {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  min-height: 500px;
   width: 100vw;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -190,6 +191,10 @@ body .navbar .dropdown .dropdown-content .mid-text h5 {
 body .navbar .dropdown .dropdown-content .mid-text a {
   color: rgb(0, 0, 0);
   text-decoration: none;
+}
+body .navbar .dropdown .dropdown-content .mid-text h5, body .navbar .dropdown .dropdown-content .mid-text a:hover {
+  color: #00adb5;
+  cursor: pointer;
 }
 body .navbar .dropdown:focus-within .dropdown-content {
   display: block;
